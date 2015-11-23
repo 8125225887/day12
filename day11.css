@@ -1,0 +1,41 @@
+table{
+    box-shadow: 10px 10px 5px #888888;
+    height: 250px;
+    margin:0 auto;
+    min-width: 50px;
+    margin-top: 200px;
+    min-width: 50px;
+    overflow: scroll;
+}
+table td{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 5px;
+    width: 200px;
+    overflow: scroll;
+}
+td:hover{
+    color: green;
+    font-size: 20px;
+
+}
+th:hover{
+   color: maroon;
+   font-size: 25px;
+
+}
+table th{
+    background: #fff8e1;
+    overflow: scroll;
+}
+table tr{
+    line-height: 8px;
+}
+
+tr:nth-of-type(2n+2){
+    background: #e1f5f8;
+}
+
+tr:nth-of-type(2n+3){
+    background: #fafafa;
+}

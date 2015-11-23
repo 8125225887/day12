@@ -1,0 +1,54 @@
+<html>
+<head><script src="jquery-1.11.3.min.js"></script>
+  <style>
+  div{
+    cursor: pointer;
+    margin-left: 300px;
+    width: 50%;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f88888;
+    box-shadow:  10px 10px 5px #888888;
+  }
+  div:hover{
+    font-size: 30px;
+    background-color: #eee;
+  }
+  #touch1,#touch2,#touch3{
+
+    margin-left: 300px;
+    width: 50%;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+    padding-bottom: 50px;
+    font-size: 15px;
+    background-color: #f88888;
+    box-shadow:  10px 10px 5px #888888;
+
+  }
+  </style>
+</head>
+<body>
+  <div id="id1">ClickHere</div>
+  <div id="touch1" style ="display:none" >Hi </div>
+  <div id="id2">TouchHere</div>
+    <div id="touch2" style ="display:none" > you</div>
+  <div id="id3">SeeHere</div>
+  <div id="touch3" style ="display:none" > Here</div>
+
+  <script>
+  $('#id1').click(function(){
+    $('#touch1').slideToggle("fast");
+  });
+  $('#id2').click(function(){
+    $('#touch2').slideToggle("slow");
+  });
+  $('#id3').click(function(){
+    $('#touch3').slideToggle("slow");
+  });
+  </script>
+</body>
+
+</html>

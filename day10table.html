@@ -1,0 +1,91 @@
+<html>
+<head><script src="jquery-1.11.3.min.js"></script>
+  <link rel = "stylesheet" href = "day10table.css" type = "text/css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div id = "navi" onmouseover="display();" onmouseout="dclose();">
+
+<nav>
+      <ul id = "navigation">
+
+           <li><i class="fa fa-home" id = "user"></i>&nbsp;&nbsp;<span style="display:none">
+             <a href = "#" class = "text">Home</a></span></li> <br><br><br>
+            <li><i class="fa fa-user" id = "user"></i>&nbsp;&nbsp;<span style="display:none">
+              <a href = "#" class = "text">Users</a></span></li><br><br><br>
+            <li><i class="fa fa-user" id = "user"></i>&nbsp;&nbsp;<span style="display:none">
+              <a href = "#" class = "text">Friends</a></span></li><br><br><br>
+            <li><i class="fa fa-user" id = "user"></i>&nbsp;&nbsp;<span style="display:none">
+              <a href = "#" class = "text">Lists</a></span></li><br><br><br>
+            <li><i class="fa fa-user" id = "user"></i>&nbsp;&nbsp;<span style="display:none">
+              <a href = "#" class = "text">Settings</a></span></li><br><br><br>
+          <li><i class = "fa fa-hand-o-right" id="user"></i>&nbsp;&nbsp;<span style="display:none">
+            <a href = "#" class = "text">Privacy</a></span></li><br>
+
+        </ul>
+</nav>
+
+  </div>
+  <div id='tab'>
+    <ul>
+      <li><a href="#tr1">Test1</a></li>
+      <li><a href="#tr2">Test2</a></li>
+      <li><a href="#tr3">Test3</a></li>
+      <li><a href="#tr4">Test4</a></li>
+    </ul>
+  </div>
+  <table id="table">
+    <tr>
+      <th align="left">Items</th>
+      <th align="left">Colors</th>
+      <th align="left">Price</th>
+      <th align="left">Vendor</th>
+      <th align="left">Phone Number</th>
+    </tr>
+    <tr>
+      <td>Acer</td>
+      <td>Black,White,pink</td>
+      <td>50,000</td>
+      <td>Srinivas</td>
+      <td>040-11115141</td>
+    </tr>
+    <tr>
+      <td>Thoshiba</td>
+      <td>Black</td>
+      <td>50,000</td>
+      <td>Swis</td>
+      <td>151-0075444</td>
+    </tr>
+    <tr>
+      <td>Dell</td>
+      <td>White,pink</td>
+      <td>50,000</td>
+      <td>Robin</td>
+      <td>121-85855141</td>
+    </tr>
+    <tr>
+      <td>Lenovo</td>
+      <td>White,Black</td>
+      <td>60,000</td>
+      <td>Rahul</td>
+      <td>144-0235141</td>
+    </tr>
+    <tr>
+      <td>Sony</td>
+      <td>Black,White,pink</td>
+      <td>25,000</td>
+      <td>Arjun</td>
+      <td>858-75486141</td>
+    </tr>
+</table>
+<script>
+function display(){
+  $("span").css("display","initial");
+}
+function dclose(){
+  $("span").css("display","none");
+}
+</script>
+</body>
+</html>

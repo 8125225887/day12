@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.tab div {
+    display: none;
+     box-shadow: 10px 10px 5px #888888;
+
+}
+
+.tab div:target {
+    display: block;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 5px;
+}
+.tab a{
+  text-decoration: none;
+  background-color: #eee;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+a:hover{
+  font-size: 30px
+}
+
+div:first-child{
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 200px;
+}
+</style>
+</head>
+<body>
+
+<div class = "tab">
+
+<a href = "#link1">Test1</a>
+<a href = "#link2">Test2</a>
+<a href = "#link3">Test3</a>
+
+<div id = "link1" >
+  <h3>This is from Link1</h3>
+  <p>Happy New Year</p>
+</div>
+
+<div id = "link2">
+  <h3>This is from Link2</h3>
+  <h4>Happy Birthday</h4>
+</div>
+
+<div id = "link3">
+  <h3>This is from Link3</h3>
+  <p>Congrats!</p>
+</div>
+
+</div>
+
+</body>
+</html>

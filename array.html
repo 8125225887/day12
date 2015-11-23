@@ -1,0 +1,27 @@
+<html>
+<body>
+  <script>
+  var arr = ["abcd","xyz","lmno"];
+  reverseArray();
+
+function reverseArray(){
+
+    var len = arr.length;
+    for(var i = 0; i < len; i++){
+    var st = "",a1;
+    var a = arr[i].length;
+    a1 = a;
+    for(var j = 0; j < a; j++){
+     st += arr[i].substring(a1-1,a1);
+     a1= a1-1;
+    }
+        arr[i] = st;
+    }
+
+  for(var l = len-1; l >= 0; l--){
+   console.log(arr[l]);
+  }
+}
+</script>
+</body>
+</html>
